@@ -15,7 +15,7 @@ int main(int argc, char **argv)
     printf("%s\n", result);
     free(result);
 
-    return 0;
+    return (EXIT_SUCCESS);
 }
 
 char *rot13(const char *src)
