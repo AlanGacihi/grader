@@ -83,3 +83,20 @@ Traceback (most recent call last):
   File "C:\Users\user\AppData\Local\Programs\Python\Python39\lib\subprocess.py", line 1420, in _execute_child
     hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
 FileNotFoundError: [WinError 2] The system cannot find the file specified
+2022-10-10 16:40:02,379 ERROR    Uncaught exception: [WinError 2] The system cannot find the file specified
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\new\pa1\autograde.py", line 973, in main
+    test_project(assignment, src_dir, build_dir, data_dir, **kws)
+  File "C:\Users\user\Desktop\new\pa1\autograde.py", line 728, in test_project
+    project.build()
+  File "C:\Users\user\Desktop\new\pa1\autograde.py", line 686, in build
+    p.build(clear)
+  File "C:\Users\user\Desktop\new\pa1\autograde.py", line 637, in build
+    run_command(['make'])
+  File "C:\Users\user\Desktop\new\pa1\autograde.py", line 40, in run_command
+    p = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python39\lib\subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\user\AppData\Local\Programs\Python\Python39\lib\subprocess.py", line 1420, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+FileNotFoundError: [WinError 2] The system cannot find the file specified
