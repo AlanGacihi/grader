@@ -1,4 +1,4 @@
-TARGET = rpn.c
+TARGET = rpn
 CC     = gcc
 CFLAGS = -g -std=c99 -Wall -Wvla -Werror -fsanitize=address,undefined
 

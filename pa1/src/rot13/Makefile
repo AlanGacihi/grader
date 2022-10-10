@@ -1,4 +1,4 @@
-TARGET = rot13.c
+TARGET = rot13
 CC     = gcc
 CFLAGS = -g -std=c99 -Wall -Wvla -Werror -fsanitize=address,undefined
 
