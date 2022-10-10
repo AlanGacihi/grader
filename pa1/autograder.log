@@ -100,3 +100,18 @@ Traceback (most recent call last):
   File "C:\Users\user\AppData\Local\Programs\Python\Python39\lib\subprocess.py", line 1420, in _execute_child
     hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
 FileNotFoundError: [WinError 2] The system cannot find the file specified
+2022-10-10 07:03:20,517 ERROR    Uncaught exception: [Errno 32] Broken pipe
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/grader/pa1/autograde.py", line 973, in main
+    test_project(assignment, src_dir, build_dir, data_dir, **kws)
+  File "/grader/pa1/autograde.py", line 743, in test_project
+    (success, credit) = t.run()
+  File "/grader/pa1/autograde.py", line 159, in run
+    self.handle_stdin(p.stdin)
+  File "/grader/pa1/autograde.py", line 380, in handle_stdin
+    stdin.close()
+BrokenPipeError: [Errno 32] Broken pipe
